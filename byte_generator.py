@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Generate a list of bytes, useful for checking for "bad bytes"
 import sys
 l = [i for i in range(10)]
