@@ -2,7 +2,7 @@
 import sys
 
 if len(sys.argv) == 1:
-    print "./script <ascii>"
+    print "[*] Usage: ./script <ascii>"
     sys.exit(1)
 
 first = True

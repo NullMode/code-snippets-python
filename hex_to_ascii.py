@@ -2,7 +2,7 @@
 import sys
 
 if len(sys.argv) == 1:
-    print "./script <hex>"
+    print "[*] Usage: ./script <hex>"
     sys.exit(1)
 
 

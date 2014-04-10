@@ -2,7 +2,7 @@
 import sys
 
 if sys.argv == 1:
-    print "./script <input file> <output file>"
+    print "[*] Usage: ./script <input file> <output file>"
     sys.exit(1)
 
 filein = open(sys.argv[1], "r")
