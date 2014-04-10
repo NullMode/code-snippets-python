@@ -1,7 +1,14 @@
 About
 =====
 
-This repository is a collection of code snippets in python that might be useful for others.
+This repository is a collection of code snippets in python that might be useful for others. Below are explanations and examples for some of the scripts.
+
+### ascii\_to\_hex.py
+
+This script simply converts input ASCII to hex. Example:
+
+	./script hello
+	hello -> 68656c6c6f
 
 
 ### byte_generator.py
@@ -57,6 +64,15 @@ This script takes in an integer value and generates a sequential number list. Th
 	0006
 	0007
 	...
+
+
+### ascii\_to\_hex.py
+
+This script simply converts input hex to ASCII. Example:
+
+	./script 68656c6c6f
+	68656c6c6f -> help
+
 
 
 ### percentage\_output_loading.py
