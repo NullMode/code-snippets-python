@@ -70,13 +70,35 @@ This script takes in an integer value and generates a sequential number list. Th
 	...
 
 
-### ascii\_to\_hex.py
+### hex\_to\_ascii.py
 This script simply converts input hex to ASCII. Example:
 
 	./script 68656c6c6f
 	68656c6c6f -> help
 
+### lines\_not\_in\_file.py
+This script takes two files, a check is made to see what lines in file2 do not appear in file1. Below is an example
 
+	cat file1
+	a
+	b
+	c
+	d
+	e
+	f
+	
+	cat file2
+	d
+	e
+	f
+	
+	./script file1 file2
+	a
+	b
+	c
+
+	
+	
 
 ### percentage\_output_loading.py
 This snippet takes a text file, reads in each line, and whilst doing so gives a constantly updating percentage of it's progress.
