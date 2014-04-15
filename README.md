@@ -103,6 +103,5 @@ This script takes two files, a check is made to see what lines in file2 do not a
 ### percentage\_output_loading.py
 This snippet takes a text file, reads in each line, and whilst doing so gives a constantly updating percentage of it's progress.
 
-
-
-
+### visio\_covert\_tms\_to\_vdx.py
+This script will take an input tms file and convert it into a vdx file. Visio works better with vdx files rather than tms files.
