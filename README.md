@@ -6,8 +6,8 @@ This repository is a collection of code snippets in python that might be useful 
 ### ascii\_to\_hex.py
 This script simply converts input ASCII to hex. Example:
 
-	./script hello
-	hello -> 68656c6c6f
+	./ascii_to_hex.py hello
+	hello -> 6656c6c6f
 
 ### backup_class.py
 A rough class that can be used to backup folders to a target folder.
@@ -24,17 +24,28 @@ This script takes an input file and decodes any html encoded characters into the
 	cat file1.txt
 	&lt;script&gt;alert(1)&lt;/script&gt;
 
-	./script file1.txt file2.txt
+	./decode_html_encoded.py file1.txt file2.txt
 	[*] Decoding completed!
 
 	cat file2.txt
 	<script>alert(1)</script>
 
+### decode\_URL_encoded.py
+This script takes an input file and decodes any URL encoded characters into their respective character. The below shows an example script:
+
+	cat file1.txt
+	%3c%73%63%72%69%70%74%3e%61%6c%65%72%74%28%31%29%3b%3c%2f%73%63%72%69%70%74%3e
+
+	./decode_url_encoded.py file1.txt file2.txt
+	[*] Decoding completed!
+	
+	cat file2.txt
+	<script>alert(1);</script>
 
 ### eip\_ascii\_reverse.py
 This script takes an EIP (4 bytes of hex) value, converts it to ASCII, reverses the value then prints it out. 
 
-	./script 41424344
+	./eip_ascii_reverse.py 41424344
 	DCBA
 
 ### file\_lowercase\_to_uppercase.py
@@ -77,7 +88,7 @@ Here is some output from the script running for more explanation:
 ### generate\_padded\_number_list.py
 This script takes in an integer value and generates a sequential number list. The input integer helps define the maximum number. If the application is given "2" as an argument, the application will return 00 to 99. If "4" is used, 0000 to 9999 is outputted. The key part of the script is to pad the numbers with 0's to equal the length of the input value.
 
-    python generate\_padded\_number_list.py 4
+    ./generate\_padded\_number_list.py 4
 	0000
 	0001
 	0002
@@ -91,7 +102,7 @@ This script takes in an integer value and generates a sequential number list. Th
 ### hex\_to\_ascii.py
 This script simply converts input hex to ASCII. Example:
 
-	./script 68656c6c6f
+	./hex_to_ascii.py 68656c6c6f
 	68656c6c6f -> help
 
 ### lines\_not\_in\_file.py
@@ -110,7 +121,7 @@ This script takes two files, a check is made to see what lines in file2 do not a
 	e
 	f
 	
-	./script file1 file2
+	./lines_not_in_file.py file1 file2
 	a
 	b
 	c
